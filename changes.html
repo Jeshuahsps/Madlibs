@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MadLibs</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload="changesSetup();">
+    <div id="dashboard">
+        <div id="header">
+        </div>
+        <div id="actionbox">
+            <div id="storyShow">
+            </div>
+            <form id="substitutions">
+                <div>
+                    <label for="index">Word #</label>
+                    <input id="index">
+                </div>
+                <div>
+                    <label for="origWord">Original Word</label>
+                    <input id="origWord">
+                </div>
+                <div>
+                    <label for="POS">Part of Speech</label>
+                    <select name="POS" id="POS">
+                        <option value="noun">Noun</option>
+                        <option value="noun">Noun(Plural)</option>
+                        <option value="proper noun">Proper Noun</option>
+                        <option value="number">Number</option>
+                        <option value="adjective">Adjective</option>
+                        <option value="verb">Verb</option>
+                        <option value="adverb">Adverb</option>
+                        <option value="preposition">Interjection</option>
+                    </select>
+                </div>
+            </form>
+            <button onClick="nextPOS()">Next Word</button>
+        </div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
