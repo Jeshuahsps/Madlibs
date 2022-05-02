@@ -240,3 +240,4 @@ function swap(){
         swapStory.innerText = "View original story";
     }
 }
+//Here's hoping
